@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Employe Name</th> &nbsp;
+            <th>Title</th> &nbsp;
+            <th>Department</th> &nbsp;
+            <th>Actions</th>
+        </tr>
+        <tr th:each="employee : ${employees}">
+            <td th:text="${employee.name}"></td>
+            <td th:text="${employee.title}"></td>
+            <td th:text="${employee.department.name}"></td>
+            <td>
+                <a th:href="@{/update/{id}(id=${employee.id})}">Details</a> -
+                <a th:href="@{/detail/{id}(id=${employee.id})}">Update</a> -
+                <a th:href="@{/delete/{id}(id=${employee.id})}">Delete</a>
+
+            </td>       </tr>
+
+    </table>
+
+</body>
+</html>

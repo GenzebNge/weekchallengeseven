@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a hreaf="/detail{id}"> Employee detailse</a>
+
+<tr th:each="employee : ${employees}">
+    <td th:text="${employee.name}"></td>
+    <td th:text="${employee.title}"></td>
+    <td th:text="${employee.department.name}"></td>
+
+<!--Name : <span th:text="employee.name"></span> <br>-->
+<!--Title : <span th:text="employee.title"></span> <br>-->
+<!--Department : <span th:text="employee.department.name"></span> <br>-->
+<a hreaf="@{delete/{id}(id=${employee.id})}/"> Delete this employee</a>
+</body>
+</html>
