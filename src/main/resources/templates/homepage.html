@@ -1,26 +1,9 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h2>Sterling Solution Employee: Database</h2>-->
-
-<!--<a href="/"> Home </a><br>-->
-<!--<a href="/listemployee"> All Employee </a><br>-->
-<!--<a href="/listdepartment"> All Department</a>-->
-<!--<a href="/addemployee"> Add Employee</a>-->
-<!--<a href="/adddepartment"> Add Department</a>-->
-
-<!--</body>-->
-<!--</html>-->
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head style="background-color:green;">
     <title>Title</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -32,13 +15,53 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <div class="jumbotron text-centex">
-        <h1 style="color:blue"> Home Page  </h1>
+
+        <h3 style="color:blue">
+            <strong>
+                <!--<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236">-->
+
+                <p class="text-center">    Wellcome To Home Page</p>
+            </strong>
+        </h3>
     </div>
 </head>
 <body>
-<a href="/"> Home </a><br>
-<a href="/departmentform"> Add Department</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/employeeform"> Add Employee</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="/employeelist"> All Employee </a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="/departmentlist"> All Department</a>&nbsp;&nbsp;
 
+
+<div class="container-fluid">
+    <body style="background-color:rosybrown;">
+    <div class="row">
+
+        <div class="col-sm-2">
+            <a href="/">
+                <dt>Home </dt>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div class="col-md-2">
+            <a href="/departmentform">
+                <dt> Add Department</dt>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="col-sm-2">
+            <a href="/employeeform">
+                <dt> Add Employee</dt>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div class="col-sm-2">
+            <a href="/employeelist">
+                <dt>All Employee </dt>
+            </a> &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div class="col-sm-2">
+            <a href="/departmentlist">
+                <dt>All Department</dt>
+            </a>&nbsp;&nbsp;
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
